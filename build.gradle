@@ -32,7 +32,7 @@ java {
 }
 
 dockerBuild {
-    images = ["gcr.io/hhh-dev-dmz-wsky/specialdelivery:latest"]
+    images = ["gcr.io/consolo-sandbox-dmz-wsky/specialdelivery:latest"]
 }
 
 graalvmNative.toolchainDetection = false
