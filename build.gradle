@@ -31,6 +31,10 @@ java {
     targetCompatibility = JavaVersion.toVersion("11")
 }
 
+dockerBuild {
+    images = ["gcr.io/hhh-dev-dmz-wsky/specialdelivery:latest"]
+}
+
 graalvmNative.toolchainDetection = false
 micronaut {
     runtime("netty")
