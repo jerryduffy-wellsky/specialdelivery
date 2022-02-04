@@ -8,10 +8,12 @@ import io.micronaut.http.MutableHttpResponse;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Produces;
+import io.swagger.v3.oas.annotations.Hidden;
 
 import java.time.Instant;
 
 @Controller("/about")
+@Hidden
 public class AboutController {
     @Get
     @Produces(MediaType.APPLICATION_JSON)
