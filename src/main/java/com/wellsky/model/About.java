@@ -10,6 +10,8 @@ import java.time.Instant;
 @Setter
 @RequiredArgsConstructor
 public class About {
+    private final String projectName;
+    private final String description;
     private final String version;
     private final Instant buildTimestamp;
 }

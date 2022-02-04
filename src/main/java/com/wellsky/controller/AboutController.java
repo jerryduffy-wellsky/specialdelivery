@@ -18,6 +18,13 @@ public class AboutController {
     @Get
     @Produces(MediaType.APPLICATION_JSON)
     public MutableHttpResponse<About> about() {
-        return HttpResponse.status(HttpStatus.OK).body(new About("1.0.0", Instant.now()));
+        return HttpResponse.status(HttpStatus.OK).body(
+                new About(
+                        "Special Delivery",
+                        "Connecting Caring Individuals to Home Bound Patients Through Food Order & Delivery",
+                        "1.0.0",
+                        Instant.now()
+                )
+        );
     }
 }
